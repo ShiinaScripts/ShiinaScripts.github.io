@@ -7,14 +7,9 @@
 */
 :root {
 --bg: #344055;                /*stick to darker colors*/
-
 --menubg: #fff;             /*whatever color your heart desires */
-
 --menutext: #111;        /* you probably want a different color than above */
-
-
 --speed: 20s;          /* 5 being very fast snowstorm, 20 being slow snowfall */
-
 --font: "Dosis", Verdana, sans-serif;       /* font for the context menu */
 }
 
@@ -27,27 +22,19 @@ html, body {
     overflow: hidden;
     margin: -8px;
 }
-
 #clock {
     font-family: Dosis;
-    font-size: 60pt;
+    font-size: 50pt;
     font-weight: 600;
     /* font-family: sans-serif; */
     color: #f2f2f2;
-    margin-bottom: 30px;
+    margin-bottom: .25em;
     padding-top: 30px;
     text-align: center;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
-
 #links{
   color: #eee;
   font-weight: 500;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .links{
   color: #eee;
@@ -55,9 +42,6 @@ html, body {
   font-stretch: condensed;
   font-weight: 600;
   text-decoration: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 #snow {
@@ -75,30 +59,32 @@ html, body {
   -ms-animation: snow var(--speed) linear infinite;
   animation: snow var(--speed) linear infinite;
 }
+
 @keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
+
 @-moz-keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
 }
+
 @-webkit-keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
+
 @-ms-keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 
-
-                                                    /* c o n t e x t  m e n u */
-
+  /* c o n t e x t  m e n u */
 .hide {
     display: none;
 }
@@ -136,18 +122,19 @@ html, body {
   list-style: none;
   margin: 0;
 }
+
 #menu li{
     list-style: none;
 }
+
 #menu li:hover {
   background: var(--bg);
 }
 
-
 #container {
-  height: 50%;
+  height: 100%;
   width: 100%;
-  position: center;
+  position: absolute;
     z-index: 10;
 }
 
@@ -274,8 +261,4 @@ html, body {
 #container #bottom_right.dots {
   bottom: 30px;
   right: 30px;
-}
-
-#FrontBox {
-  background-color: #111;
 }
