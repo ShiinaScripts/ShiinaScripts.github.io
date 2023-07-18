@@ -7,21 +7,13 @@
 */
 :root {
 --bg: #344055;                /*stick to darker colors*/
-
 --menubg: #fff;             /*whatever color your heart desires */
-
 --menutext: #111;        /* you probably want a different color than above */
-
-
 --speed: 20s;          /* 5 being very fast snowstorm, 20 being slow snowfall */
-
 --font: "Dosis", Verdana, sans-serif;       /* font for the context menu */
 }
 
-
-
                                                     /*     s n o w     */
-
 html, body {
     background-color: var(--bg);
     overflow: hidden;
@@ -39,12 +31,9 @@ html, body {
 #links{
   color: #eee;
   font-weight: 500;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .links{
   color: #eee;
@@ -52,12 +41,9 @@ html, body {
   font-stretch: condensed;
   font-weight: 600;
   text-decoration: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #snow {
