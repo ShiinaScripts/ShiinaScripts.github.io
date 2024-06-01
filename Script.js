@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array of image file names
     var images = [
-        "Main2.png",
         "Main3.png",
         "img11.png",
         "img2.jpg",
@@ -10,10 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
         // Add more image file names as needed
     ];
 
-    // Select a random image from the array
-    var randomImage = images[Math.floor(Math.random() * images.length)];
+   // Function to set a random image
+    function setRandomImage() {
+        var randomImage = images[Math.floor(Math.random() * images.length)];
+        var mascotElement = document.getElementById('mascot');
+        mascotElement.style.backgroundImage = 'url("../img/' + randomImage + '")';
+    }
 
-    // Set the background image of the #mascot element
-    var mascotElement = document.getElementById('mascot');
-    mascotElement.style.backgroundImage = 'url("img/' + randomImage + '")';
+    // Set the initial random image
+    setRandomImage();
+
+    // Change the image every 10 seconds
+    setInterval(setRandomImage, 10000);
 });
