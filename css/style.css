@@ -165,9 +165,12 @@ html, body {
 
 #container #mascot {
   /*  background: no-repeat url("render/render_02.png") center; */
-  background: no-repeat url("../img/Main2.png") center;
+  /* background: no-repeat url("../img/Main2.png") center; */
   background-color: #444B54;
-  background-size: 75% auto;
+  /*  background-size: 75% auto;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   box-shadow: 0 28px 16px -26px rgba(0, 0, 0, .8);
   height: 18vw !important;
