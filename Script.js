@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function setRandomImage() {
         var randomImage = images[Math.floor(Math.random() * images.length)];
         var mascotElement = document.getElementById('mascot');
-        mascotElement.style.backgroundImage = 'url("../img/' + randomImage + '")';
+        mascotElement.style.backgroundImage = 'url("img/' + randomImage + '")';
     }
 
     // Set the initial random image
