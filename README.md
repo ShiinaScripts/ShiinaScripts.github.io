@@ -17,7 +17,7 @@ chrome://flags/#windows11-mica-titlebar
 
 ## Winget
 Winget install microsoft.skype  
-winget install valve.steam
-winget install startallback
-winget install microsoft.skype
-winget install discord.discord
+winget install valve.steam  
+winget install startallback  
+winget install microsoft.skype  
+winget install discord.discord  
